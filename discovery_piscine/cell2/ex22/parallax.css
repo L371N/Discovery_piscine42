@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    background-color: green;
+}
+
+.fondo {
+    background-image: url('https://e0.pxfuel.com/wallpapers/129/555/desktop-wallpaper-jim-carrey-for.jpg');
+    background-size: 255%;
+    background-attachment:fixed;
+    height: 650px;
+    background-position-x: -590px;
+    color: white;
+    text-align: center;
+}
+
+.segunda-imagen {
+    background-image: url('https://images8.alphacoders.com/485/485295.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; 
+    background-position-x: -300px;
+    position: relative; /* CAMBIO: De "inherit" a "relative" */
+    color: white;
+}
+
+.texto-centrado {
+    position: absolute;
+    bottom: 0;
+    left: 50%;  /* Centramos horizontalmente */
+    transform: translateX(-50%);  /* Ajuste fino para centrar horizontalmente */
+    padding: 10px; /* Espaciado opcional para que el texto no esté pegado al borde inferior */
+}
+
+.texto {
+    text-align: center;
+    font-size: 80px;
+    background-color: green;
+    width: 100%;
+    height: 10vh;
+}
+
+p {
+    font: bolder;
+    font-size: 50px;
+    height: 3px;
+}

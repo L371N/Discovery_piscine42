@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balloon</title>
+    <style>
+        #globo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+            transition: width 0.3s, height 0.3s, background-color 0.3s; /* Transición para suavizar el cambio de tamaño y color */
+        }
+    </style>
+</head>
+<body>
+    <div id="globo"></div>
+    <script>
+        var globo = document.getElementById('globo');
+        var colores = ['red', 'green', 'blue'];
+        var indiceColor = 0;
+
+        globo.addEventListener('click', function() {
+
+            var tamanoActual = parseInt(getComputedStyle(globo).width);
+            if (tamanoActual < 420) {
+                globo.style.width = (tamanoActual + 10) + "px";
+                globo.style.height = (tamanoActual + 10) + "px";
+            } else {
+                globo.style.width = '200px';
+                globo.style.height = '200px';
+                indiceColor = -1; 
+            }
+            
+            indiceColor = (indiceColor + 1) % 3;
+            globo.style.backgroundColor = colores[indiceColor];
+        });
+
+        globo.addEventListener('mouseleave', function() {
+            // Disminuir tamaño
+            var tamanoActual = parseInt(getComputedStyle(globo).width);
+            if (tamanoActual > 200) {
+                globo.style.width = (tamanoActual - 5) + "px";
+                globo.style.height = (tamanoActual - 5) + "px";
+            }
+            
+            indiceColor = (indiceColor - 1 + 3) % 3;
+            globo.style.backgroundColor = colores[indiceColor];
+        });
+    </script>
+</body>
+</html>

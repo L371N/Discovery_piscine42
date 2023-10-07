@@ -1,0 +1,60 @@
+.fondo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/premium-vector/pattern-united-state-american-flag-s_24911-45819.jpg');
+    background-color: black;
+    background-size:cover, 100vh; /* Ajusta la imagen para que cubra el elemento completo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100vw;
+    height: 100vh; /* Ajustado para que coincida con el alto de la ventana del viewport */
+}
+
+fieldset {
+    padding: 0;
+    background-color: white;
+    padding-bottom: 0px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+img {
+    width: 40vw;
+    border-collapse: collapse;
+    margin: 0;
+    float: left;
+}
+
+td {
+    margin: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    height: 90px;
+    margin: 0;
+    padding-top: 0px;
+}
+
+.redes td img {
+    width: 50px; /* Puedes ajustar este valor según tus preferencias */
+    height: auto; /* Esto mantendrá la relación de aspecto de la imagen */
+    padding-left: 50px;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+}
